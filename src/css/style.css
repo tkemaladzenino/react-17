@@ -1,0 +1,110 @@
+/* styles.css */
+.layout-body {
+    background: url('../images/backgr-3.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.layout-bodyR {
+    background: url('../images/backgr-4.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn {
+    background: #68c7d4;
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 52px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d2f3f6;
+    color: #68c7d4;
+    border: 5px solid #68c7d4;
+}
+
+#username {
+    width: 320px;
+}
+
+#email {
+    width: 320px;
+}
+
+#primary {
+    width: 320px;
+}
+
+#password {
+    width: 320px;
+}
+
+.A {
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 6px solid #68c7d4;
+    border-radius: 14px;
+    box-shadow: 4px 19px 26px #68c7d4;
+}
+
+.custom-form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-form .form-group {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.custom-form .form-control {
+    border: 4px solid #68c7d4;
+    border-radius: 16px;
+    width: 100%;
+    padding: 10px;
+    height: 52px;
+}
+
+.custom-form .form-label {
+    color: rgb(65, 65, 128);
+}
+
+.custom-form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.btnA {
+    background: #81dbff;
+    color: #006dd3;
+    border: 5px solid #006dd3;
+    width: 90px;
+    border-radius: 20px;
+    height: 50px;
+    width: 320px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnA:hover {
+    background-color: #b6efff;
+    color: #258be6;
+    border: 5px solid #258be6;
+}
+
+.btnA:focus {
+    outline: blue;
+}
