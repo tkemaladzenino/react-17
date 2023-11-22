@@ -21,11 +21,14 @@ const Authorization = ({ handleLogin }) => {
 
     return (
         <div className="container mt-5 ">
-            <div className="row justify-content-center align-items-center pt-5">
+            <div className="row d-flex justify-content-center align-items-center pt-5">
                 <div className="col-md-6 pt-5">
-                    <div className="A p-1 pt-3">
+                    <div className="A p-1 pt-3 d-flex justify-content-center flex-column">
+                        <h2 style={{
+                            textAlign: 'center', color: '#68c7d4'
+                        }}>Authorization</h2>
                         <Form className="custom-form" onSubmit={handleLoginFormSubmit}>
-                            <Form.Group>
+                            < Form.Group >
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control id="username" type="text"
                                     onChange={(e) => setUsername(e.target.value)} />
@@ -42,8 +45,8 @@ const Authorization = ({ handleLogin }) => {
                     </div>
 
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

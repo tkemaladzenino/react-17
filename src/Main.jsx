@@ -1,21 +1,31 @@
 
 // Main.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 
 function Main() {
     const navigate = useNavigate();
 
+    useEffect(() => {
+        // Check if the user is logged in
+        const loggedIn = localStorage.getItem('loggedIn') === 'true';
+
+        if (!loggedIn) {
+            // Redirect to the login page if not logged in
+            navigate('/');
+        }
+    }, [navigate]);
     const handleExit = () => {
+
         localStorage.removeItem('loggedIn');
         localStorage.removeItem('email');
         localStorage.removeItem('password');
-        navigate('/');
+        localStorage.setItem('loggedIn', 'false'); // Set 'false' as a string
+        navigate('/'); // Navigate to the login page after logout
     };
 
     // Check if the user is logged in
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
-
     if (!loggedIn) {
         // Redirect to authorization page if not logged in
         navigate('/');
