@@ -24,13 +24,6 @@ function Main() {
         navigate('/'); // Navigate to the login page after logout
     };
 
-    // Check if the user is logged in
-    const loggedIn = localStorage.getItem('loggedIn') === 'true';
-    if (!loggedIn) {
-        // Redirect to authorization page if not logged in
-        navigate('/');
-        return null;
-    }
 
     return (
         <div className="container-fluid layout-body d-flex justify-content-center ">
